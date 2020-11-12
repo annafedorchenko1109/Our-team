@@ -1,0 +1,38 @@
+
+.card-team__header{
+    /*max-width: 850px/1920px*100%;*/
+    text-align: center;
+   margin-top: 115px/998px*100%;
+   &-subtitle{
+       @include text($subtitle-fsz, $fweight:500,  $lheight:24px, $color:$title-color );
+          font-family: $font-raleway;
+       }
+    &-title{
+        @include text($big-fsz, $fweight:900,  $lheight:66px, $color:$main-color);
+        font-family:$font-roboto;
+        margin-bottom: 45px;
+    }
+    .card-team__team-logo{
+        position: relative;
+        width: 450px;
+        margin: 0 auto;
+    }
+    .card-team__team-logo::before, .card-team__team-logo::after {
+        content: '';
+	height: 1px;
+	width: 45%;
+	background:$main-color;
+	position: absolute;
+	top:50%;
+
+    }
+    .card-team__team-logo::before{
+        left: 0;
+    }
+    .card-team__team-logo::after{
+        right: 0;
+    }
+}
+
+
+

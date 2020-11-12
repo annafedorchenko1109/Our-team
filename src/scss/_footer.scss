@@ -1,0 +1,13 @@
+.card-team-footer{
+    margin-top: 3%;
+    &__button{
+        width: 12px;
+height: 12px;
+border: 1px solid $main-color;
+background-color: $main-color;
+border-radius: 50%;
+    }
+    &__button--white{
+        background-color:#fff;
+    }
+}

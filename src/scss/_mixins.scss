@@ -1,0 +1,20 @@
+
+@mixin position($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin text($btn-fsz, $fweight:500,  $lheight:20px, $color:$text-color ){
+    font-size: $btn-fsz;
+    font-weight: $fweight;
+    line-height: $lheight;
+    color:$color;
+}
+@mixin flex($j-content:flex-start, $a-items: stretch, $f-direction:row,$wrap:nowrap ){
+    display: flex;
+    justify-content: $j-content;
+    align-items: $a-items;
+    flex-direction: $f-direction;
+    flex-wrap: $wrap;
+}

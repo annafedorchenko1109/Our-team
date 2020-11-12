@@ -1,0 +1,111 @@
+ .container{
+ width: 90%;
+    
+    margin: 0 auto;
+}
+.card-team__card-wrapper{
+   
+    /*width: 1600px/1920px*100%;*/
+    /*
+    height: 615px/998px*100%;
+    */
+    margin-top: 5%;
+    position: relative;
+   
+    @include flex($j-content:space-between, $a-items: center, $f-direction:row,$wrap:nowrap );
+    .card-team-descript{
+        max-width: 35%;
+    }
+}
+/*
+.card-team__card-wrapper-item{
+    width: 90%;
+}*/
+.card-team-descript{
+    padding: 90px 40px 70px 50px;
+ height: 500px;
+    @include flex($j-content:space-around, $a-items: center, $f-direction:column,$wrap:nowrap );
+    &__title{
+        @include text($title-fsz, $fweight:900,  $lheight:24px, $color:$subtitle-color);
+        font-family:$font-roboto;
+        position: relative;
+        padding-bottom: 5%;
+    }
+    &__subtitle{
+        @include text($text-fsz, $fweight:400,  $lheight:36px, $color:$subtitle-color);
+        font-family:$font-raleway;
+        
+    }
+&__button{
+    @include text($btn-fsz, $fweight:700,  $lheight:24px, $color:$subtitle-color);
+font-family: $font-open-sans;
+border: 1px solid $main-color;
+background-color: #fff;
+padding: 1%;
+
+}
+&__button:hover, &__button:focus, &__button:checked{
+    background-color:$main-color;
+    color: #fff;
+}
+    
+}
+
+.card-team-descript__title::after {
+	content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100px;
+    background:$main-color;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -50px;
+
+}
+.card-team-descript__social-list{
+   width: 30%;
+   @include flex($j-content:space-around, $a-items: center, $f-direction:row,$wrap:nowrap );
+}
+.card-team-descript__text{
+    @include text($btn-fsz, $fweight:500,  $lheight:24px, $color:$text-color);
+    font-family:$font-raleway;
+    text-align: center;
+}
+.card-team-descript__dashed-line{
+    height: 1%;
+	width: 5%;
+    background: $main-color;
+    position: relative;
+}
+.card-team-descript__dashed-line:before, .card-team-descript__dashed-line:after{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+	background:  $main-color;
+}
+.card-team-descript__dashed-line:before{
+    left: -80%;
+}
+.card-team-descript__dashed-line:after{
+    right: -80%;
+}
+.card-team__card-wrapper-item{
+    position: relative;
+}
+.card-team-descript:before{
+    content: '';
+	width: 0.1%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -7%;
+	background: $main-color;
+} 
+
+.fas{
+    color:$main-color;
+    font-size: $text-fsz;
+}

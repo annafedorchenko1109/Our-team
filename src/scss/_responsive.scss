@@ -1,0 +1,90 @@
+
+ @media screen and (max-width:1441px) 
+{
+    .card-team__card-wrapper{
+    .card-team-descript:before{
+        left: -9%;
+   
+    } }
+
+}
+@media screen and (max-width:1025px)
+{ 
+    .card-team__card-wrapper{
+    .photo-wrap {
+        max-width: 30%
+}
+}
+.card-team-descript {
+    padding: 90px 40px 70px 50px;}
+}
+@media screen and (max-width:769px){
+    .container{
+    .card-team__card-wrapper{
+    flex-direction: column;}
+    }
+.icon{
+    display: none;
+}
+.card-team-descript::before{
+    display: none;
+}
+.card-team-descript__title {
+    font-size: 25px;
+   margin-top: 25%;
+    text-align: center;
+}
+.card-team-descript__subtitle {
+    font-size: 15px;
+}
+.card-team-descript__text {
+    font-size: 12px
+}
+.card-team__card-wrapper .card-team-descript {
+    max-width: 90%;
+}
+.card-team-descript {
+    padding: 0;}
+    .card-team__card-wrapper .photo-wrap {
+        max-width: 50%;
+    }
+    .card-team-descript__title {
+        margin-top: 10%;}
+
+}
+@media screen and (max-width:426px){
+    .container{
+    .card-team__card-wrapper{
+    flex-direction: column;}
+    }
+.icon{
+    display: none;
+}
+.card-team-descript::before{
+    display: none;
+}
+.card-team-descript__title {
+    font-size: 25px;
+   margin-top: 25%;
+    text-align: center;
+}
+.card-team-descript__subtitle {
+    font-size: 15px;
+}
+.card-team-descript__text {
+    font-size: 12px
+}
+.photo-wrap {
+    max-width: 70%;}
+.card-team__card-wrapper .card-team-descript {
+    max-width: 100%;
+    height: fit-content;
+}
+.card-team-descript {
+    padding: 0;
+}
+.card-team__header .card-team__team-logo {
+    width: 300px;}
+    .card-team-descript__title {
+        margin-top: 5%;}
+}

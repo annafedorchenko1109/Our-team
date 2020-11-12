@@ -1,0 +1,35 @@
+.photo-wrap{
+    max-width: 50%;
+    @include flex($j-content:center, $a-items: center);
+}
+.photo-wrap__inner-bottom-corners{
+    
+    img{
+        border: 1px solid $main-color;
+        z-index: 3;
+    }
+    padding: 5%;
+    border: 1px solid $main-color;
+    position: relative;
+    z-index: 1;
+    
+}
+.photo-wrap__inner-bottom-corners::before, .photo-wrap__inner-bottom-corners::after{
+    content: '';
+background:#fff;
+z-index: -1;
+}
+.photo-wrap__inner-bottom-corners::before{
+    position: absolute;
+left: 25%;
+top: -2%;
+right: 25%;
+bottom: -2%;
+}
+.photo-wrap__inner-bottom-corners::after{
+	position: absolute;
+    left: -2%;
+    top: 25%;
+    right: -2%;
+    bottom: 25%;
+}
